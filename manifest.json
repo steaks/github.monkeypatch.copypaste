@@ -10,8 +10,8 @@
     "clipboardRead"
   ],
   "icons": {
-    "48": "codeducky2.png",
-    "128": "codeducky2.png"
+    "48": "codeducky_partial_logo.png",
+    "128": "codeducky_partial_logo.png"
   },
   "content_scripts" : [{
     "matches" : [
