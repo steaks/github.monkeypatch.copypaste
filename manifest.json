@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Smart Copying",
+  "description": "Cleans copying in GitHub by not including '+', '-' and other meta information from diffs in a pull request.",
+  "version": "1.0",
+
+  "permissions": [
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "icons": {
+    "48": "codeducky2.png",
+    "128": "codeducky2.png"
+  },
+  "content_scripts" : [{
+    "matches" : [
+      "https://github.com/*/pull*"
+    ],
+    "js": [ "jquery-1.11.1.min.js", "GitHubSmartCopying.js" ]
+  }],
+  "background" : {
+    "scripts": [ "jquery-1.11.1.min.js", "GitHubSmartCopyingBackground.js" ],
+    "persistent": false
+  }
+}
