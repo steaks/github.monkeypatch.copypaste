@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "GitHub Smart Copying",
-  "version": "1.0.1 ",
+  "version": "1.0.1",
 
   "permissions": [
     "clipboardWrite",
