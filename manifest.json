@@ -2,7 +2,6 @@
   "manifest_version": 2,
 
   "name": "GitHub Smart Copying",
-  "description": "Cleans copying in GitHub by not including '+', '-' and other meta information from diffs in a pull request.",
   "version": "1.0.1 ",
 
   "permissions": [
