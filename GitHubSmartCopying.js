@@ -12,6 +12,9 @@
     }
     
     $(document).on("copy", function () {
+        if (!window.location.href.match(/.*\/pull.*/) && !window.location.href.match(/.*\/commit.*/)) {
+            return;
+        }
         var selection = window.getSelection(),
             selectionText = selection.toString(), 
             lines = selectionText.split(/\r\n|\r|\n/),
