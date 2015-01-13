@@ -3,7 +3,7 @@
 
   "name": "GitHub Smart Copying",
   "description": "Fixes copy/cut annoyances in GitHub",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "permissions": [
     "clipboardWrite",
