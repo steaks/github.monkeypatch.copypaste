@@ -28,6 +28,10 @@
                 : curr.replace(metaInfoRegex, "");
             return agg + cleanedCurr + (index !== lines.length - 1 ? lineEnding : "");
         }, "");
-        chrome.runtime.sendMessage({ cleanedSelectionText: cleanedSelectionText });
+        //I'm not exactly sure why a timeout is useful here.  The behavior indicates that with out a timeout sometimes
+        //the copy clipboard does not actually have the correctly cleaned text.  The timeout seems to mitigate that problem.
+        //My best guess is that there is a race condition and the timeout makes this code "lose" the race condition...so
+        //the last text in the clipboard is this cleaned text rather than the regular text.
+        setTimeout(function () { chrome.runtime.sendMessage({ cleanedSelectionText: cleanedSelectionText }); });
     });
 })();
