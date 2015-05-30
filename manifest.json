@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "GitHub Smart Copying",
+  "name": "github.monkeypatch.copypaste",
   "description": "Fixes copy/cut annoyances in GitHub",
-  "version": "1.0.3",
+  "version": "1.0.4",
 
   "permissions": [
     "clipboardWrite",
